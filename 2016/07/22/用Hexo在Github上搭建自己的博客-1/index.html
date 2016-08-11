@@ -6,7 +6,8 @@
 <p><a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a><br><img src="http://obbach78y.bkt.clouddn.com/1.png" alt=""></p>
 <p>3）    本地安装npm。<br>Npm其实就是nodejs，用来生成静态页面的。一般来说，用nvm(Node Version Manager)来安装npm比较好，因为npm可能不止一个版本。用下面的链接可以下载一个nvm安装好，然后用一条命令（nvm install 4.4.5）去安装和管理npm。通常情况下，装完nvm以后，执行命令已经被添加到Path里了，所以可能在任何地方运行nvm。当然，一开始我也是下载了npm包手动装上的，貌似也没问题。</p>
 <p><a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="external">https://github.com/coreybutler/nvm-windows/releases</a><br><a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="external">https://github.com/coreybutler/nvm-windows</a></p>
-<p><img src="http://obbach78y.bkt.clouddn.com/2.png" alt=""><br><br><br><img src="http://obbach78y.bkt.clouddn.com/3.png" alt=""></p>
+<p><img src="http://obbach78y.bkt.clouddn.com/2.png" alt=""></p>
+<p><img src="http://obbach78y.bkt.clouddn.com/3.png" alt=""></p>
 <p>4）    安装Hexo。<br>这一步花的时间最多，也可能是前面的步骤未作好导致的。<br>首先要注意的是，必须用Git shell去执行npm来安装hexo。另外，由于npm要去指定的地方下载hexo，所以务必保证下载的地址是可访问的。我碰到的一个问题是，在下载时光标一直在忙状态，但是就是没有进度，后来发现是公司的代理服务器把下载的地址给屏蔽了，用自己的手机做热点，问题马上解决。</p>
 <p>4.1）执行“npm install hexo-cli -g”和 “npm install hexo save”，其中hexo应该是http服务器，hexo-cli是一个命令行工具，用来操作hexo服务器。</p>
 <pre><code>有一个告警（WARN），但应该可以忽略。
