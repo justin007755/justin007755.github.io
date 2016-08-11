@@ -14,22 +14,11 @@ do
         echo "192.168.31.$i is down" >> down.list  
     fi  
 done</pre>  
-[xuzh@xuzh-linux ~]$    
-[xuzh@xuzh-linux ~]$ less for_ping.sh   
-[xuzh@xuzh-linux ~]$ ./for_ping.sh       
-192.168.31.156 is up.    
 
-从笔记本电脑SSH至树莓派：  
-[xuzh@xuzh-linux ~]$ ssh pi@192.168.31.156  
-pi@192.168.31.156's password:   
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.  
-Last login: Sat Dec 19 03:36:53 2015 from 192.168.31.184  
+<p>[xuzh@xuzh-linux ~]$<br>[xuzh@xuzh-linux ~]$ less for_ping.sh<br>[xuzh@xuzh-linux ~]$ ./for_ping.sh<br>192.168.31.156 is up.    </p>
+<p>从笔记本电脑SSH至树莓派：<br>[xuzh@xuzh-linux ~]$ ssh pi@192.168.31.156<br>pi@192.168.31.156’s password:   </p>
+<p>The programs included with the Debian GNU/Linux system are free software;<br>the exact distribution terms for each program are described in the<br>individual files in /usr/share/doc/*/copyright.</p>
+<p>Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent<br>permitted by applicable law.<br>Last login: Sat Dec 19 03:36:53 2015 from 192.168.31.184  </p>
 <pre>pi@raspberrypi:~ $ ip a  
 1: lo: mtu 65536 qdisc noqueue state UNKNOWN group default  
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
