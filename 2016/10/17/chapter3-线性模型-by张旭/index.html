@@ -2,7 +2,7 @@
 <h1 id="线性模型"><a href="#线性模型" class="headerlink" title="线性模型"></a>线性模型</h1><h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1. 基本概念"></a>1. 基本概念</h2><p><u>什么是线性模型(linear model)？</u></p>
 <p>就是通过一个属性（即特征，feature）的线性组合来进行预测的函数，即<br>$$f(x)=\omega_1x_1+\omega_2x_2+…+\omega_dx_d+b$$</p>
 <p>一般向量形式可以写成$$f(x)=\omega^Tx+b$$<br>其中$$\omega=(\omega_1;\omega_2;…;\omega_d)$$</p>
-<p>ω和b学得之后，模型就得以确定。即对于每一个新的测试样本，其特征（x向量）一定的情况下（通过特征提取得到），由这个确定的线性模型即可得到预测结果（f(x)）。<br>以书中的西瓜位例，给出一个新的西瓜，通过其特征数据（色泽，根蒂，敲声）以及这个训练好的线性模型（如下），即可得到预测结果（f(x)）：\$$f<em>{好瓜}(x)=0.2 \cdot x</em>{色泽}\$$好瓜还是坏瓜。</p>
+<p>ω和b学得之后，模型就得以确定。即对于每一个新的测试样本，其特征（x向量）一定的情况下（通过特征提取得到），由这个确定的线性模型即可得到预测结果（f(x)）。<br>以书中的西瓜位例，给出一个新的西瓜，通过其特征数据（色泽，根蒂，敲声）以及这个训练好的线性模型（如下），即可得到预测结果（f(x)）：$$f<em>{好瓜}(x)=0.2 \cdot x</em>{色泽}$$好瓜还是坏瓜。</p>
 <p>\[f<em>{好瓜}(x) = 0.2 \cdot x</em>{色泽}+0.5 \cdot x<em>{根蒂}+0.3 \cdot x</em>{敲声}+1\]</p>
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
