@@ -31,7 +31,7 @@
 <p>In statistics, the standard deviation (SD, also represented by the Greek letter sigma σ or the Latin letter s) is a measure that is used to quantify the amount of variation or dispersion of a set of data values.</p>
 </blockquote>
 <p>均方误差有非常好的几何意义，它对应了常用的欧几里得距离或简称“欧氏距离”。基于均方误差最小化来进行模型求解的方法称为“最小二乘法”。在线性回归中，最小二乘法就是试图找到一条直线，使所有样本到直线上的欧氏距离之和最小。<font color="red">这里的均方误差最小化即上面提到的平方损失函数？</font></p>
-<p>所以变成了求解ω和b使$$E(\omega,b)=\sum_1(y_i-\omega \times -b)^2$$最小化的过程，称为线性回归模型的最小二乘“参数估计”。 把ω和b看作是E的函数，就变成了一个求极值的问题，可以通过求导数得到。根据数学知识我们知道，函数的极值点为偏导为0的点。这就是最小二乘法的解法，就是求得平方损失函数的极值点。这里$$E(\omega,b)$$也是关于ω和b的凸函数，当它关于ω和b的导数均为零时，得到ω和b的最优解。</p>
+<p>所以变成了求解ω和b使$$E(\omega,b)=\sum_1(y_i-\omega \times -b)^2$$最小化的过程，称为线性回归模型的最小二乘“参数估计”。 把ω和b看作是E的函数，就变成了一个求极值的问题，可以通过求导数得到。根据数学知识我们知道，函数的极值点为偏导为0的点。这就是最小二乘法的解法，就是求得平方损失函数的极值点。这里$$E(\omega,b)$$也是关于ω和b的凸函数，当它关于ω和b的导数均为零时，得到ω和b的最优解。<br>求解结果如下：$$\omega=\frac {\sum_1^my_i(x_i-x)}{\sum_1^mx^2-\frac 1m(\sum_1^mx_i)^2}$$</p>
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
